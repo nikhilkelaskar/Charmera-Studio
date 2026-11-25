@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Shop pretty artificial jewellery, handmade keychains and little charms at Charméra Studio">
+  <title>Charméra Studio | Little things, lovely moments</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="announcement">A little sparkle goes a long way ✨ &nbsp; | &nbsp; Welcome to our little store</div>
+  <header class="site-header">
+    <a class="brand" href="#"><span class="brand-mark">♡</span><span>CHARMÉRA STUDIO<small>little things, lovely moments</small></span></a>
+    <nav>
+      <a href="#home">Home</a><a href="#shop">Shop</a><a href="#about">Our Story</a><a href="#contact">Contact</a>
+    </nav>
+    <button class="cart-button" id="openCart" aria-label="Open shopping cart">Bag <span id="cartCount">0</span> ♡</button>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow">MADE FOR YOUR LITTLE MOMENTS</p>
+        <h1>Find your<br><em>everyday sparkle.</em></h1>
+        <p class="hero-text">Pretty jewellery, adorable handmade keychains and tiny treasures that make you smile.</p>
+        <a class="primary-button" href="#shop">Explore the collection <span>→</span></a>
+        <div class="hero-note">♡ Thoughtful finds &nbsp; · &nbsp; Cute details &nbsp; · &nbsp; Made with love</div>
+      </div>
+      <div class="hero-art">
+        <div class="hero-image"></div>
+        <div class="round-stamp">A LITTLE<br>HAPPY<br>PLACE ♡</div>
+        <div class="floating-tag">Your new<br>favourite thing!</div>
+      </div>
+    </section>
+
+    <section class="categories">
+      <div><span>✧</span><p>Jewellery</p><small>For your sparkle days</small></div>
+      <div><span>♡</span><p>Handmade charms</p><small>Little things, big joy</small></div>
+      <div><span>🎀</span><p>Gift-worthy finds</p><small>Made to make them smile</small></div>
+    </section>
+
+    <section class="shop-section" id="shop">
+      <div class="section-heading">
+        <div><p class="eyebrow">THE LITTLE CHARM EDIT</p><h2>Shop our favourites</h2></div>
+        <p>Pick a little something<br>that feels like you.</p>
+      </div>
+      <div class="shop-controls">
+        <div class="filters" role="group" aria-label="Filter products">
+          <button class="filter active" data-filter="All">All items</button>
+          <button class="filter" data-filter="Jewellery">Jewellery</button>
+          <button class="filter" data-filter="Keychains">Keychains</button>
+        </div>
+        <input id="searchInput" type="search" placeholder="Search little treasures..." aria-label="Search products">
+      </div>
+      <div class="product-grid" id="productGrid"></div>
+    </section>
+
+    <section class="story" id="about">
+      <div class="story-photo"></div>
+      <div class="story-copy"><p class="eyebrow">A NOTE FROM OUR LITTLE WORLD</p><h2>Small details.<br><em>Big happiness.</em></h2><p>Charméra Studio is a happy little corner for playful jewellery and handmade charms. Find something for yourself, or choose a sweet surprise for someone you love.</p><a href="#shop" class="text-link">Find your charm →</a></div>
+    </section>
+
+    <section class="newsletter" id="contact">
+      <p class="eyebrow">LET'S STAY IN TOUCH</p><h2>A little note, now and then.</h2>
+      <p>Questions, custom requests or just want to say hello? We'd love to hear from you.</p>
+      <a class="primary-button" href="mailto:khdekarsanika746@gmail.com">Email us <span>→</span></a>
+      
+    </section>
+  </main>
+
+  <footer><a class="footer-brand" href="#">CHARMÉRA STUDIO ♡</a><span>Made with love, for your lovely little moments.</span><span>© <span id="year"></span> Charméra Studio</span><a href="admin.html">Admin ♡</a></footer>
+
+  <div class="overlay" id="overlay"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Shopping cart">
+    <div class="drawer-head"><div><p class="eyebrow">YOUR LITTLE FINDS</p><h2>Your bag <span>♡</span></h2></div><button id="closeCart" class="close-button" aria-label="Close cart">×</button></div>
+    <div id="cartItems" class="cart-items"><p class="empty-cart">Your bag is waiting for a little sparkle. ♡</p></div>
+    <div class="cart-bottom"><div class="total-row"><span>Subtotal</span><strong id="cartTotal">₹0</strong></div><p class="shipping-note">Delivery charges, if any, can be confirmed when you order.</p><button id="checkoutButton" class="primary-button checkout">Order on WhatsApp →</button><small>WhatsApp ordering needs your business number added in <b>script.js</b>.</small></div>
+  </aside>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script><script src="supabase-config.js"></script><script src="script.js"></script>
+</body>
+</html>
